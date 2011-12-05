@@ -109,6 +109,10 @@ app.put('/', function(req, res){
   //res.redirect('back');
 });
 
+app.listen(34376);
+console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);
+
+
 /*
 app.post('/', function(req, res){
     console.log("*********************************");
@@ -119,6 +123,3 @@ app.post('/', function(req, res){
   //res.redirect('back');
 });
 */
-
-app.listen(34376);
-console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);
