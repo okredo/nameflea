@@ -92,7 +92,7 @@ app.put('/', function(req, res){
     request('http://www.google.com', function (error, response, body) {
       if (!error && response.statusCode == 200) {
         console.log("http request okay") // Print the google web page.
-        res.redirect('http://www.google.com');
+        res.redirect('http://www.zazzle.com');
       }
     })
 
