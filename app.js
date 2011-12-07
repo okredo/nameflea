@@ -6,7 +6,7 @@ var querystring = require('querystring');
 var http = require('http');
 var request = require('request');
 
-var ec_eng = require('./post.js')
+var WG = require('./model/wordgenerator.js')
 
 var express = require('express')
   , routes = require('./routes')
@@ -81,27 +81,32 @@ app.put('/', function(req, res){
       name:  req.body.user.name 
     });
     console.log("Inserted!");
-    
+
+    var result = "";
     var data = querystring.stringify({
         'email' : req.body.user.email,
         'name'  : req.body.user.name
     });
-    console.log("Posting . . .");
 
-    //ec_eng.PostToCommerceEndPoint(data); 
+    var wordGen = new WG.WordGenerator();
+    console.log(wordGen);
+    var result = wordGen.generate(req.body.user.name);
+    
+    /*
+    console.log("Posting . . .");
     request('http://www.google.com', function (error, response, body) {
       if (!error && response.statusCode == 200) {
         console.log("http request okay") // Print the google web page.
         res.redirect('http://www.zazzle.com');
       }
     })
-
     console.log("Posted!");
+    */
   }
   else console.log("OOOPS.... " + JSON.stringify(req.body.user));
 
-  //res.contentType('json');
-  //res.send(JSON.stringify(req.body.user));
+  res.contentType('json');
+  res.send(JSON.stringify(result || req.body.user));
   
   console.log("*********************************");
  
@@ -125,3 +130,14 @@ app.post('/', function(req, res){
   //res.redirect('back');
 });
 */
+
+
+Array.findIndex = function(array, value) {
+  var ctr = null;
+  for (var i = 0, len = array.length; i < len; i++) {
+    if (array[i] == value) {
+      return i;
+    }
+  }
+  return ctr;
+};
