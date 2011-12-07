@@ -61,9 +61,9 @@ exports.WordGenerator.prototype._getWordByLetter = function (letter) {
 
   do
   {
-    wordPosition = this.random(0, totalNumberOfWords - 1);
+    wordPosition = Random(0, totalNumberOfWords - 1);
     //console.log("wordPosition: ", wordPosition);
-    if (this._wordsUsed[letter] && ArrayUtil.findIndex(this._wordsUsed[letter], wordPosition) != null) {
+    if (this._wordsUsed[letter] && FindIndex(this._wordsUsed[letter], wordPosition) != null) {
       letterUsed = true;
     }
     else {
@@ -87,10 +87,20 @@ exports.WordGenerator.prototype._getWordByLetter = function (letter) {
 
 // Aux methods
 
-exports.WordGenerator.prototype.random = function(min, max) {
+Random = function(min, max) {
   var offset = min;
   var range = (max - min) + 1;
 
   var randomNumber = Math.floor(Math.random() * range) + offset;
   return randomNumber;
+};
+
+FindIndex = function(array, value) {
+  var ctr = null;
+  for (var i = 0, len = array.length; i < len; i++) {
+    if (array[i] == value) {
+      return i;
+    }
+  }
+  return ctr;
 };
