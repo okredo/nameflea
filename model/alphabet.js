@@ -31,6 +31,28 @@
 
 	"o": ["Off the wall", "Offensively attractive", "Often deeply misunderstood", "Often very hungry", "One of a kind", "One of awesomeness", "One of grace", "Oozes charm", "Outrageous ", "Outstanding"],
 
+"p" ["Particularly fond of chocolate", "Perfect in every possible way", "Protector of the realm"],
+
+"q" ["Queer as chocolate orange", "Questionable restraint", "Quick-witted"],
+
+"r" ["Righteous", "Ready for anything", "Really weird"],
+
+"s" ["Shockingly incredible", "Slayer of Dragons", "So amazing it's almost impossible to believe"],
+
+"t" ["Terrifyingly awesome", "Totally epic", "True revolutionary"],
+
+"u" ["Unique beyond comprehension", "Uber cool", "Upbeat"],
+
+"v" ["Voracious kisser", "Valuable beyond belief", "very very very sexy"],
+
+"w" ["Wise, powerful and brave", "Wolf-like", "Whoever moors at his island is likely to be struck by the sheer radiance of his being"],
+
+"x" ["X-rated", "XX-rated", "XXX-rated"],
+
+"y" ["Yes, he's amazing", "Youthful", "Yummy"],
+
+"z" ["Zany", "Zombie-hunter", "Zippy"]
+
  }
 
 }})();
