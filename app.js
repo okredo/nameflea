@@ -5,6 +5,8 @@
 var querystring = require('querystring');
 var http = require('http');
 var request = require('request');
+var Podcast = require("./model/podcast.js");
+
 
 var WG = require('./model/wordgenerator.js')
 
@@ -71,6 +73,9 @@ app.put('/', function(req, res) {
 */
 
 app.put('/', function(req, res){
+var astronomyCast = new Podcast();
+astronomyCast.download('Astronomy podcast #89');
+
   console.log("*********************************");
   console.log(req.body.user);
 
@@ -89,7 +94,6 @@ app.put('/', function(req, res){
     });
 
     var wordGen = new WG.WordGenerator();
-    console.log(wordGen);
     var result = wordGen.generate(req.body.user.name);
     
     /*

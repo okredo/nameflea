@@ -37,8 +37,7 @@ this._alphabet = {
 
         "n": ["Never overrated", "Nobel prize-winning potential", "Not indulgent", "Nuts", "Nutty"],
 
-        "o": ["Off the wall", "Offensively attractive", "Often deeply misunderstood", "Often very hungry", "One of a kind", "One of awesomeness", "One of grace", "Oozes charm", "Outrageous ", "Outstanding"],
-
+	"o": ["Off the wall", "Offensively attractive", "Often deeply misunderstood", "Often very hungry", "One of a kind", "One of awesomeness", "One of grace", "Oozes charm", "Outrageous ", "Outstanding"],
   }
 };
 
