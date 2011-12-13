@@ -64,13 +64,13 @@ this._alphabet = {
 };
 
 exports.WordGenerator.prototype.generate = function (word) {
-  console.log('In generate!! ' + word);
+  console.log('In generate!! ' + word.toLocaleLowerCase() );
   var result = [];
   var currentLetter;
   for (var i = 0, len = word.length; i < len; i++) {
     currentLetter = word.charAt(i);
-    //console.log("currentLetter: ", currentLetter);
-    result.push(this._getWordByLetter(currentLetter));
+    console.log("currentLetter: ", currentLetter);
+    !simpleIsAlpha(currentLetter) ? console.log("skip non-Alpha") : result.push(this._getWordByLetter(currentLetter.toLowerCase()))
   }
 
   return result;
@@ -109,7 +109,7 @@ exports.WordGenerator.prototype._getWordByLetter = function (letter) {
 
 // Aux methods
 
-Random = function(min, max) {
+var Random = function(min, max) {
   var offset = min;
   var range = (max - min) + 1;
 
@@ -117,7 +117,7 @@ Random = function(min, max) {
   return randomNumber;
 };
 
-FindIndex = function(array, value) {
+var FindIndex = function(array, value) {
   var ctr = null;
   for (var i = 0, len = array.length; i < len; i++) {
     if (array[i] == value) {
@@ -126,3 +126,9 @@ FindIndex = function(array, value) {
   }
   return ctr;
 };
+
+
+function simpleIsAlpha(inp) {
+  return /^[a-zA-Z]/.test(inp)
+}
+

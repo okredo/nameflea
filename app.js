@@ -5,10 +5,10 @@
 var querystring = require('querystring');
 var http = require('http');
 var request = require('request');
-var Podcast = require("./model/podcast.js");
+var Podcast = require("./models/podcast.js");
 
 
-var WG = require('./model/wordgenerator.js')
+var WG = require('./models/wordgenerator.js')
 
 var express = require('express')
   , routes = require('./routes')
