@@ -69,7 +69,6 @@ exports.WordGenerator.prototype.generate = function (word) {
   var currentLetter;
   for (var i = 0, len = word.length; i < len; i++) {
     currentLetter = word.charAt(i);
-    console.log("currentLetter: ", currentLetter);
     !simpleIsAlpha(currentLetter) ? console.log("skip non-Alpha") : result.push(this._getWordByLetter(currentLetter.toLowerCase()))
   }
 
