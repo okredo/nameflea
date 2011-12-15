@@ -72,29 +72,32 @@ app.put('/', function(req, res) {
 });
 */
 
-app.put('/', function(req, res){
+app.post('/fun', function(req, res){
 var astronomyCast = new Podcast();
 astronomyCast.download('Astronomy podcast #89');
 
   console.log("*********************************");
-  console.log(req.body.user);
+  console.log("req.body.user = " + req.body.user);
+  console.log("req.body.gender = " + req.body.gender);
 
-  if (req.body.user != undefined && !!req.body.user.email && !!req.body.user.name) {
+  if (req.body.user != undefined) {
     console.log("Inserting . . . ");
     db.collection("users").insert({
-      email: req.body.user.email,
-      name:  req.body.user.name 
+      //email: req.body.user.email,
+      //name:  req.body.user.name 
+      name:  req.body.user 
     });
     console.log("Inserted!");
 
     var result = "";
     var data = querystring.stringify({
-        'email' : req.body.user.email,
-        'name'  : req.body.user.name
+        //'email' : req.body.user.email,
+        //'name'  : req.body.user.name
+        'name'  : req.body.user
     });
 
     var wordGen = new WG.WordGenerator();
-    var result = wordGen.generate(req.body.user.name);
+    var result = wordGen.generate(req.body.user);
     
     /*
     console.log("Posting . . .");

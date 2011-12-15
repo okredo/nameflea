@@ -1,13 +1,20 @@
 h1= title
 p Welcome to #{title}
 
-<form method="post" action="/">
-<input type="hidden" name="_method" value="put" />
-<span class="form_email"> email:
-<input type="text" name="user[email]" />
-</span>
-<span class="form_name">name:
-<input type="text" name="user[name]" />
-</span>
-<input type="submit" value="Submit" />
-</form>
+form()
+  fieldset
+    legend Name
+      p
+        input(type="text", id="user", name="user")
+          .tip.
+            Enter a name.
+    legend Gender
+      p
+        select(name="gender")
+          option(value="") -- Select Gender --
+          option(value="male") Male
+          option(value="female") Female
+      p.buttons
+        input(type="button", value="Submit", onClick="doQuery()")
+
+<div id='results'></div>
