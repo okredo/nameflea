@@ -2,18 +2,16 @@ h1= title
 p Welcome to #{title}
 
 form()
-  fieldset
-    legend Name
+    legend Type in your name below
       p
         input(type="text", id="user", name="user")
           .tip.
             Enter a name.
-    legend Gender
       p
-        select(name="gender")
-          option(value="") -- Select Gender --
-          option(value="male") Male
-          option(value="female") Female
+        input(type="radio", name="gender", id="gender-male", value="Male") 
+        |Male
+        input(type="radio", name="gender", id="gender-female", value="Female") 
+        |Female
       p.buttons
         input(type="button", value="Submit", onClick="doQuery()")
 
