@@ -4,13 +4,14 @@ p Welcome to #{title}
 form()
     legend Type in your name below
       p
-        input(type="text", id="user", name="user")
+        input(type="text", id="user")
           .tip.
             Enter a name.
       p
-        input(type="radio", name="gender", id="gender-male", value="Male") 
+        input(type="radio", name="gender", id="gender", value="male") 
         |Male
-        input(type="radio", name="gender", id="gender-female", value="Female") 
+      p
+        input(type="radio", name="gender", id="gender",  value="female") 
         |Female
       p.buttons
         input(type="button", value="Submit", onClick="doQuery()")

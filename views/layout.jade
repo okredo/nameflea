@@ -10,7 +10,7 @@ html
           url: '/fun',
           type: 'POST',
           dataType: 'html',
-          data: "user=" + jQuery('#user').val(),
+          data: "user=" + jQuery('#user').val() + "&gender=" + jQuery('#gender:checked').val(),
           timeout: 3000,
           error: function(){
             console.log('Error loading json document');
