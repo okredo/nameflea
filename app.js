@@ -87,26 +87,32 @@ app.put('/', function(req, res) {
 app.post('/fun', function(req, res){
   console.log("*********************************");
   console.log("req.body.user = " + req.body.user);
+  var user = req.body.user;
   console.log("req.body.gender = " + req.body.gender);
+  var gen = req.body.gender;
 
-  if (req.body.user != undefined) {
+  if (user != null && user != "" && req.body.user != "undefined") {
     console.log("Inserting . . . ");
     db.collection("users").insert({
-      //email: req.body.user.email,
-      //name:  req.body.user.name 
-      name:  req.body.user 
+      name:  user,
+      gender: gen 
     });
     console.log("Inserted!");
 
     var result = "";
-    var data = querystring.stringify({
-        //'email' : req.body.user.email,
-        //'name'  : req.body.user.name
-        'name'  : req.body.user
-    });
+    //var data = querystring.stringify({'email' : req.body.user.email, 'name'  : req.body.user.name});
 
-    var wordGen = new WG.WordGenerator(req.body.gender);
-    var result = wordGen.generate(req.body.user);
+    var wordGen = new WG.WordGenerator(gen);
+    var result = wordGen.generate(user);
+    console.log("result = " + result);
+  
+    var answer = {};
+    answer.name=req.body.user.toUpperCase();
+    answer.sentence = result.join(", ");
+
+    res.contentType('json');
+    res.send(JSON.stringify(answer));
+    console.log("*********************************");
     
     /*
     console.log("Posting . . .");
@@ -119,15 +125,14 @@ app.post('/fun', function(req, res){
     console.log("Posted!");
     */
   }
-  else console.log("OOOPS.... " + JSON.stringify(req.body.user));
+  else {
+    console.log("OOOPS.... " + JSON.stringify(req.body.user));
+    res.contentType('json');
+    res.send(JSON.stringify({error:"Name Not Provided"}));
+    console.log("*********************************");
+  }
 
-  res.contentType('json');
-  res.send(JSON.stringify(result || req.body.user));
-  
-  console.log("*********************************");
  
-  //res.send(JSON.stringify({ status: "success" }));
-  //res.redirect('back');
 });
 
 var port = process.env.PORT || 3000;
