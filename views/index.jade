@@ -8,10 +8,10 @@ form()
           .tip.
             Enter a name.
       p
-        input(type="radio", id="gender", value="male") 
+        input(type="radio", id="gender", name="gender", value="male") 
         |Male
       p
-        input(type="radio", id="gender",  value="female") 
+        input(type="radio", id="gender", name="gender",  value="female") 
         |Female
       p.buttons
         input(type="button", value="Submit", onClick="doQuery()")
