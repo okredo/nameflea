@@ -99,4 +99,4 @@ var FindIndex = function(array, value) {
 
 function simpleIsAlpha(inp) {
   return /^[a-zA-Z]/.test(inp)
-}:
+}
