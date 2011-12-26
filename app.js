@@ -2,24 +2,30 @@
 /**
  * Module dependencies.
  */
+
+//
+// Alphabet -> Word Engine 
+//
+var WG = require('./models/wordgenerator.js')
+
+//
+// node modules
+//
 var querystring = require('querystring');
 var http = require('http');
 var request = require('request');
-var Podcast = require("./models/podcast.js");
-//var ALPHABET = require("./models/common_alphabet.js");
 
-// Alphabet -> Word Engine 
-var WG = require('./models/wordgenerator.js')
-
-
+//
 // express
+//
 var express = require('express')
   , routes = require('./routes')
 
 var app = module.exports = express.createServer(express.logger());
 
+//
 // Configuration
-
+//
 app.configure(function(){
   app.set('views', __dirname + '/views');
   app.set('view engine', 'jade');
@@ -37,8 +43,9 @@ app.configure('production', function(){
   app.use(express.errorHandler()); 
 });
 
-
+//
 // Error Handling
+//
 function EmptyField(msg){
   this.name = 'EmptyField';
   Error.call(this, msg);
@@ -55,15 +62,17 @@ app.get('/500', function(req, res){
   throw new Error('keyboard cat!');
 });
 
-
+//
 // Persistence
+//
 var mongolian = require("mongolian");
 var db = new mongolian("mongodb://app:app@flame.mongohq.com:27043/ai_test");
 
-
+//
 // Routes
-
+//
 app.get('/', routes.index);
+
 
 /*
 app.put('/', function(req, res) {
@@ -76,9 +85,6 @@ app.put('/', function(req, res) {
 */
 
 app.post('/fun', function(req, res){
-var astronomyCast = new Podcast();
-astronomyCast.download('Astronomy podcast #89');
-
   console.log("*********************************");
   console.log("req.body.user = " + req.body.user);
   console.log("req.body.gender = " + req.body.gender);
@@ -139,8 +145,6 @@ app.post('/', function(req, res){
   //res.send(JSON.stringify({ status: "success" }));
   //res.redirect('back');
 });
-*/
-
 
 Array.findIndex = function(array, value) {
   var ctr = null;
@@ -151,3 +155,4 @@ Array.findIndex = function(array, value) {
   }
   return ctr;
 };
+*/
