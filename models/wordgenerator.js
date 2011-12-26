@@ -1,11 +1,29 @@
-exports.WordGenerator = function() {
+var Common = require("./common_alphabet.js");
+var Female = require("./female_alphabet.js");
+var Male = require("./male_alphabet.js");
 
+exports.WordGenerator = function(gender) {
   this._wordsUsed = {};
 
-  // pulls this._alphabet but it must also be included "above"
-  //var _alphabet = WordGenerator.prototype._alphabet; 
-  //_alphabet.apply(this, []); // call original
-  //this._alphabet = _alphabet;
+  if (gender != "undefined") {
+    if (gender == "male") {   
+      var m = new Male();
+      this._alphabet = m.getAlpha();
+      //console.log(this._alphabet);
+    }
+    else {
+      var f = new Female();
+      this._alphabet = f.getAlpha();
+      //console.log(this._alphabet);
+    }
+  }
+  else {
+      var c = new Common();
+      this._alphabet = c.getAlpha();
+      //console.log(this._alphabet);
+  };
+
+/*
 
 this._alphabet = {
 "a": ["Acceptable ", "Accessible ", "Adaptable ", "Admirable in every way", "Adorable", "Adventurous in many subtle ways", "Agonizingly lovely", "Agreeable", "Alert ", "Alluring ", "Amazing", "Amazing kisser", "Ambitious ", "Amusing", "Animated ", "Annoyingly fabulous", "Aromatic ", "As happy as a dog with two tails ", "As happy as a pig in shit ", "As nice as ninepence ", "As nutty as a fruit cake ", "As playful as a kitten ", "As pretty as a picture ", "As pure as the driven slush ", "As pure as the driven snow ", "Astonishing ", "Attractive", "Auspicious ", "Available in many ways", "Aware ", "Awesome", "Awesomely awesome", "Awesomeness encapsulated", "Absolutely out of the ordinary", "Acceptable ", "Accessible ", "Adaptable ", "Admirable in every way", "Adorable", "Adventurous in many subtle ways", "Agonizingly lovely", "Agreeable", "Alert ", "Alluring ", "Amazing", "Amazing kisser", "Ambitious ", "Amusing", "Animated ", "Annoyingly fabulous", "Aromatic ", "As happy as a dog with two tails ", "As happy as a pig in shit ", "As nice as ninepence ", "As nutty as a fruit cake ", "As playful as a kitten ", "As pretty as a picture ", "As pure as the driven slush ", "As pure as the driven snow ", "Astonishing ", "Attractive", "Auspicious ", "Available in many ways", "Aware ", "Awesome", "Awesomely awesome", "Awesomeness encapsulated"],
@@ -61,7 +79,11 @@ this._alphabet = {
 "z" : ["Zany", "Zombie-hunter", "Zippy"]
 
   }
+
+*/
+
 };
+
 
 exports.WordGenerator.prototype.generate = function (word) {
   console.log('In generate!! ' + word.toLocaleLowerCase() );

@@ -6,10 +6,13 @@ var querystring = require('querystring');
 var http = require('http');
 var request = require('request');
 var Podcast = require("./models/podcast.js");
+//var ALPHABET = require("./models/common_alphabet.js");
 
-
+// Alphabet -> Word Engine 
 var WG = require('./models/wordgenerator.js')
 
+
+// express
 var express = require('express')
   , routes = require('./routes')
 
@@ -96,7 +99,7 @@ astronomyCast.download('Astronomy podcast #89');
         'name'  : req.body.user
     });
 
-    var wordGen = new WG.WordGenerator();
+    var wordGen = new WG.WordGenerator(req.body.gender);
     var result = wordGen.generate(req.body.user);
     
     /*

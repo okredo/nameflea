@@ -5,7 +5,7 @@ function Podcast() {
 }
 
 Podcast.prototype.download = function(episode) {
-    console.log('Downloading: ' + episode);
+    //console.log('Downloading: ' + episode);
 }
 
 module.exports = Podcast;
