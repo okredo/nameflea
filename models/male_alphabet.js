@@ -6,58 +6,62 @@ function Male() {
 
 Male.prototype.getAlpha = function() {
 
-  var male = {"a": ["Acceptable ", "Accessible ", "Adaptable ", "Admirable in every way", "Adorable", "Adventurous in many subtle ways", "Agonizingly lovely", "Agreeable", "Alert ", "Alluring ", "Amazing", "Amazing kisser", "Ambitious ", "Amusing", "Animated ", "Annoyingly fabulous", "Aromatic ", "As happy as a dog with two tails ", "As happy as a pig in shit ", "As nice as ninepence ", "As nutty as a fruit cake ", "As playful as a kitten ", "As pretty as a picture ", "As pure as the driven slush ", "As pure as the driven snow ", "Astonishing ", "Attractive", "Auspicious ", "Available in many ways", "Aware ", "Awesome", "Awesomely awesome", "Awesomeness encapsulated", "Absolutely out of the ordinary", "Acceptable ", "Accessible ", "Adaptable ", "Admirable in every way", "Adorable", "Adventurous in many subtle ways", "Agonizingly lovely", "Agreeable", "Alert ", "Alluring ", "Amazing", "Amazing kisser", "Ambitious ", "Amusing", "Animated ", "Annoyingly fabulous", "Aromatic ", "As happy as a dog with two tails ", "As happy as a pig in shit ", "As nice as ninepence ", "As nutty as a fruit cake ", "As playful as a kitten ", "As pretty as a picture ", "As pure as the driven slush ", "As pure as the driven snow ", "Astonishing ", "Attractive", "Auspicious ", "Available in many ways", "Aware ", "Awesome", "Awesomely awesome", "Awesomeness encapsulated"],
+                                                                     
+                                                                     
+var male = {                                                                     
+"a": ["A man who knows not his awesome powers", "A very sexy man", "A work of art", "Admired by the ladies", "Admired warrior of true virtue", "Always looks hot"],
 
-"b": ["Badass", "Barmy", "Beautiful", "Berserk ", "Bewildered", "Bewitching smiler", "Billowy ", "Bite-sized", "Bizarre ", "Bloody wonderful", "Bonkers", "Bouncy", "Boundless ", "Brainy ", "Brave", "Breathtakingly wonderful", "Breezy ", "Bright ", "Bright as a button ", "Bright as a new pin ", "Broadcasting awesomeness 24hrs a day", "Bustling", "Busy as a one legged arse kicker ", "Busy being awesome"],
+"b": ["Basically a stud", "Body of a greek god", "Brad Pitt beware", "Brains on his shoulders", "Brave as a lion"],
 
-"c": ["Capable ", "Caring", "Ceaselessly epic", "Charming beyond belief", "Cheerful ", "Chocolate aficionado", "Classy ", "Clever oh so clever", "Cluttered", "Colorful ", "Colossal", "Complete", "Complete loony", "Completely and utterly flawless", "Complex", "Confused (but in a good way)", "Cool", "Cool as a cucumber ", "Courageous ", "Crazy ", "Crazy as a loon ", "Cuddly", "Cultured ", "Curious ", "Curiously weird", "Curvy", "Cute", "Cute as a bug's ear"],
+"c": ["Captain holiday", "Chivalrous", "Could kill Voldemort by mere eye contact"],
 
-"d": ["Dances weirdly", "Daydreamer extraordinaire", "Dazzling", "Deep", "Definitely a hunk", "Delicious", "Delightful ", "Delightful to behold", "Delirious", "Deranged (in a way that is inspiring)", "Determined ", "Devastatingly gorgeous", "Devilish ", "Diligent ", "Discreetly splendid", "Dizzy", "Dramatic ", "Dynamic "],
+"d": ["Dances like his parents", "Dark lord of the night", "Dashing", "Dastardly handsome", "Defender of justice", "Devilishly handsome", "Downright bloody awesome (there is a chance that he is the reincarnation of all that is fabulous", "Definitely a hunk"],
 
-"e": ["Easy", "Eatable ", "Elfin ", "Encapsulation of all things good", "Enchanting ", "Entertaining ", "Enthusiastic about life", "Epic", "Epic beyond belief", "Epically epic", "Epically indulgent", "Epically lovely", "Epicness encapsulated", "Epitome of fabulosity squared", "Ethereal ", "Excellent", "Exciting", "Exotic ", "Exuberant "],
+"e": ["Epic farter", "Everyone acknowledges that he is the most epic man ever to have walked the surface of this humble planet", "Exceptionally manly and wise", "extremely popular with the ladies"],
 
-"f": ["Fabulous ", "Fantastic ", "Fascinating", "Fearless ", "Festive ", "Fine as frog's hair ", "Fine really", "Flagrant indulger", "Flaky (in an inspiring way)", "Flawless ", "Force of nature", "Fresh", "Fresh as a daisy ", "Fresh as a mountain stream ", "Friendly ", "Funniest person in the universe", "Funny ", "Fuzzy"],
+"f": ["Fabulous specimen of a man", "Fellow of great wit and charm", "Farter extraordinaire", "From one of the newer generations of great vikings"],
 
-"g": ["Genius of everything", "Gentle", "Gets it", "Gifted", "Glamorous ", "Gleaming ", "Glistening", "Glorious ", "Glows", "Glows in the dark", "Godly ", "Goes weird at midnight", "Good as gold ", "Gorgeous ", "Great", "Greatest specimen of a human being", "Groovy ", "Gugu of all gurus"],
+"g": ["Gatekeeper of the realm", "Gentlemanly", "Girls love him and boys want to be like him", "God's gift to womankind", "Gorgeous (the kind of gorgeous that makes you want to squeeze him)", "Great with his hands (he could easily destroy you)", "Guardian of the realm"],
 
-"h": ["Happy", "Happy as a clam ", "Hard to be equalled", "Has superpowers", "Hears little voices", "Heart of chocolate", "Heavenly", "Here but not entirely", "Hilarious ", "Honest as the day is long ", "Honorable ", "Hot", "Huuuuuuuge heart", "Hypnotic "],
+"h": ["Half-man half-werewolf", "Happyhandsome", "Harry Potter would be terrified of him", "He who must be obeyed", "Hard as a rock", "Has a glint in his eyes", "Hero of justice", "Hero of the people", "His golden aura can be seen from space", "Humankind is lucky to have him on the planet", "Humble slayer of anything evil", "Handsome", "Hero of the revolution", "Hero to the masses"],
 
-"i": ["Immense", "Impossibly brilliant", "Incandescent ", "Incredible", "Incredibly lovely", "Inexplicably and randomly weird", "Infectuously amazing", "Invincible ", "Island of intelligence in a sea of silliness", "Island of sanity"],
+"i": ["Incredibly amazing", "In touch with his inner self", "Impossibly unbelievable at everything he does"],
 
-"j": ["Juicy", "Jumbled (every now and then)", "Just the kind of person you want to be trapped on a desert island with", "Juicy when squeezed"],
+"j": ["Just you wait and see how famous he becomes", "Joy to be near", "Justin Bieber is talentless compared to this dude"],
 
-"k": ["Kinky", "Knower of everything", "Knowing"],
+"k": ["Kingly", "Kind to lesser mortals", "Kind of awe-inspiring to even be near", "Knight in shining armor"],
 
-"l": ["Lethal ", "Lighthouse of love", "Lighting wit", "Like a fine wine (not so easy to define)", "Loveliest guy on the planet", "Lovely ", "Lunatic"],
+"l": ["Lion in human form", "Lord admiral of all things epic", "Lord of the gadget"],
 
-"m": ["Mad as a march hare ", "Mad as a wet hen ", "Made from gold", "Magical ", "Magnificent", "Magnifique", "Majestic ", "Makes the wold a smilier place", "Makes the world a better place", "Makes the world a sunnier place", "Maniacal (in an inspiring way)", "Marvelous", "Mauseatingly superb ", "Maximum output of awesomeness", "Meandering", "Mercurial", "Messy", "Mind-blowing to be around", "Mind-blowingly bright", "Momentous ", "Multi-talented", "Mysterious"],
+"m": ["Master farter", "maybe a prince", "Mighty and brave", "More powerful than Harry Potter"],
 
-"n": ["Never overrated", "Nobel prize-winning potential", "Not indulgent", "Nuts", "Nutty"],
+"n": ["Noble beyond his years", "Noble lord of everything in all time and space"],
 
-"o": ["Off the wall", "Offensively attractive", "Often deeply misunderstood", "Often very hungry", "One of a kind", "One of awesomeness", "One of grace", "Oozes charm", "Outrageous ", "Outstanding"],
+"o": ["Obviously the most amazing man to ever have walked upon this humble planet", "Obviously the man of every woman's dreams"],
 
-"p": ["Particularly fond of chocolate", "Perfect in every possible way", "Protector of the realm"],
+"p": ["Part wolf", "Pioneer and warrior", "Prince of princes", "Prone to gaseous emissions", "Puppy n human form", "Purveyor of happiness to all who surround him"],
 
-"q": ["Queer as chocolate orange", "Questionable restraint", "Quick-witted"],
+"q": ["Quite the most amazing person ever to have lived"],
 
-"r": ["Righteous", "Ready for anything", "Really weird"],
+"r": ["Resolute in his vigilance", "Romeo step aside", "Romeo would have hero-worshipped him", "Ruler of the weird through the power of his evil laugh"],
 
-"s": ["Shockingly incredible", "Slayer of Dragons", "So amazing it's almost impossible to believe"],
+"s": ["Scientists trying to measure his awesomeness are likely to get burnt", "Slayer of dragons", "Slayer of lions and vampires", "So awesome that anyone who goes near him without protective clothing will get burnt", "Somewhat romantic", "Step aside Batman","Step aside Casanova","Step aside Indiana Jones","Step aside James Bond","Step aside Daniel Craig","Step aside Romeo","Step aside Superman","Step aside Tarzan", "Superhero disguised as someone fairly normal", "Supplier of happiness to all who surround him"],
 
-"t": ["Terrifyingly awesome", "Totally epic", "True revolutionary"],
+"t": ["The world doesn't quite get his awesomeness", "There is actually no word that truly defines him", "Try to meet him whatever it takes", "Textbook example of handsomeness", "Textbook example of a hero"],
 
-"u": ["Unique beyond comprehension", "Uber cool", "Upbeat"],
+"u": ["Understated epicness", "Unbelievably and impossibly good looking"],
 
-"v": ["Voracious kisser", "Valuable beyond belief", "very very very sexy"],
+"v": ["very very very amazing", "Volcanic awesomeness emanates from him without you realizing it"],
 
-"w": ["Wise, powerful and brave", "Wolf-like", "Whoever moors at his island is likely to be struck by the sheer radiance of his being"],
+"w": ["Warrior of virtue", "Whatever it takes try to meet him (you will never forget it)", "Wise beyond his years", "Wise and powerful and brave", "Wizard genes", "World's most amazing man", "Whoever moors at his island is sure to be struck by the extraordinariness of his being"],
 
-"x": ["X-rated", "XX-rated", "XXX-rated"],
+"x": ["Xceptionally brilliant"],
 
-"y": ["Yes, he's amazing", "Youthful", "Yummy"],
+"y": ["yes he is a mere human being and not a deity believe it or not"],
 
-"z": ["Zany", "Zombie-hunter", "Zippy"]
- }
+"z": ["Zzzz is a sound known to be associated with him"]
+}
+
 
 	return male;
 }

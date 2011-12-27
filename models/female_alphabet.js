@@ -6,58 +6,60 @@ function Female() {
 
 Female.prototype.getAlpha = function() {
 
-  var female = {"a": ["Acceptable ", "Accessible ", "Adaptable ", "Admirable in every way", "Adorable", "Adventurous in many subtle ways", "Agonizingly lovely", "Agreeable", "Alert ", "Alluring ", "Amazing", "Amazing kisser", "Ambitious ", "Amusing", "Animated ", "Annoyingly fabulous", "Aromatic ", "As happy as a dog with two tails ", "As happy as a pig in shit ", "As nice as ninepence ", "As nutty as a fruit cake ", "As playful as a kitten ", "As pretty as a picture ", "As pure as the driven slush ", "As pure as the driven snow ", "Astonishing ", "Attractive", "Auspicious ", "Available in many ways", "Aware ", "Awesome", "Awesomely awesome", "Awesomeness encapsulated", "Absolutely out of the ordinary", "Acceptable ", "Accessible ", "Adaptable ", "Admirable in every way", "Adorable", "Adventurous in many subtle ways", "Agonizingly lovely", "Agreeable", "Alert ", "Alluring ", "Amazing", "Amazing kisser", "Ambitious ", "Amusing", "Animated ", "Annoyingly fabulous", "Aromatic ", "As happy as a dog with two tails ", "As happy as a pig in shit ", "As nice as ninepence ", "As nutty as a fruit cake ", "As playful as a kitten ", "As pretty as a picture ", "As pure as the driven slush ", "As pure as the driven snow ", "Astonishing ", "Attractive", "Auspicious ", "Available in many ways", "Aware ", "Awesome", "Awesomely awesome", "Awesomeness encapsulated"],
+var female = {                                             
+"a": ["A thing of beauty", "A very very very very sexy person", "A woman who knows not her awesome powers", "Absolutely nobody can deny she's amazing", "Altogether magnifique", "Always looks fantastic", "An exclamation of beauty and wonder", "Angelic", "Angelina Jolie fears her beauty and charm", "Anyone that dares go near her without protective clothing will get burnt"],
 
-"b": ["Badass", "Barmy", "Beautiful", "Berserk ", "Bewildered", "Bewitching smiler", "Billowy ", "Bite-sized", "Bizarre ", "Bloody wonderful", "Bonkers", "Bouncy", "Boundless ", "Brainy ", "Brave", "Breathtakingly wonderful", "Breezy ", "Bright ", "Bright as a button ", "Bright as a new pin ", "Broadcasting awesomeness 24hrs a day", "Bustling", "Busy as a one legged arse kicker ", "Busy being awesome"],
+"b": ["Beautiful and as dangerous as a honey badger", "Bellisima", "Blissful being anywhere near her", "Bombshell beyond belief", "Bossy enough to tame a herd of stampeding buffalo"],
 
-"c": ["Capable ", "Caring", "Ceaselessly epic", "Charming beyond belief", "Cheerful ", "Chocolate aficionado", "Classy ", "Clever oh so clever", "Cluttered", "Colorful ", "Colossal", "Complete", "Complete loony", "Completely and utterly flawless", "Complex", "Confused (but in a good way)", "Cool", "Cool as a cucumber ", "Courageous ", "Crazy ", "Crazy as a loon ", "Cuddly", "Cultured ", "Curious ", "Curiously weird", "Curvy", "Cute", "Cute as a bug's ear"],
+"c": ["Chocolate monster", "Could have married William but let Kate have him instead"],
 
-"d": ["Dances weirdly", "Daydreamer extraordinaire", "Dazzling", "Deep", "Definitely a hunk", "Delicious", "Delightful ", "Delightful to behold", "Delirious", "Deranged (in a way that is inspiring)", "Determined ", "Devastatingly gorgeous", "Devilish ", "Diligent ", "Discreetly splendid", "Dizzy", "Dramatic ", "Dynamic "],
+"d": ["Dances like her parents", "Dancing queen", "Delicate like the world's most beautiful rose", "Devilishly gorgeous"],
 
-"e": ["Easy", "Eatable ", "Elfin ", "Encapsulation of all things good", "Enchanting ", "Entertaining ", "Enthusiastic about life", "Epic", "Epic beyond belief", "Epically epic", "Epically indulgent", "Epically lovely", "Epicness encapsulated", "Epitome of fabulosity squared", "Ethereal ", "Excellent", "Exciting", "Exotic ", "Exuberant "],
+"e": ["Elegant beyond comprehension", "Endorses continual retail therapy", "Everyone acknowledges that she is the most epic woman ever to have walked the surface of this humble planet", "Extremely popular with the men-folk"],
 
-"f": ["Fabulous ", "Fantastic ", "Fascinating", "Fearless ", "Festive ", "Fine as frog's hair ", "Fine really", "Flagrant indulger", "Flaky (in an inspiring way)", "Flawless ", "Force of nature", "Fresh", "Fresh as a daisy ", "Fresh as a mountain stream ", "Friendly ", "Funniest person in the universe", "Funny ", "Fuzzy"],
+"f": ["Fills the room with light", "Fills the room with sparkles and butterflies", "Flowery and fluttering", "Full of sweetness (especially after her third helping of dessert)"],
 
-"g": ["Genius of everything", "Gentle", "Gets it", "Gifted", "Glamorous ", "Gleaming ", "Glistening", "Glorious ", "Glows", "Glows in the dark", "Godly ", "Goes weird at midnight", "Good as gold ", "Gorgeous ", "Great", "Greatest specimen of a human being", "Groovy ", "Gugu of all gurus"],
+"g": ["God's gift to all men", "Goddess dressed in gold and riding on a white horse", "Gorgeous jewel", "Graceful and extraordinary"],
 
-"h": ["Happy", "Happy as a clam ", "Hard to be equalled", "Has superpowers", "Hears little voices", "Heart of chocolate", "Heavenly", "Here but not entirely", "Hilarious ", "Honest as the day is long ", "Honorable ", "Hot", "Huuuuuuuge heart", "Hypnotic "],
+"h": ["Has her own universe", "Her golden aura can be seen from space", "HUmankind is lucky to have her on the planet", , "Hero of the revolution", "Hero to the masses"],
 
-"i": ["Immense", "Impossibly brilliant", "Incandescent ", "Incredible", "Incredibly lovely", "Inexplicably and randomly weird", "Infectuously amazing", "Invincible ", "Island of intelligence in a sea of silliness", "Island of sanity"],
+"i": ["Intoxicating & radiant splendor", "In touch with her inner self"],
 
-"j": ["Juicy", "Jumbled (every now and then)", "Just the kind of person you want to be trapped on a desert island with", "Juicy when squeezed"],
+"j": ["Just the type of woman that most men dream of one day even speaking to"],
 
-"k": ["Kinky", "Knower of everything", "Knowing"],
+"k": ["Killer of chocolates"],
 
-"l": ["Lethal ", "Lighthouse of love", "Lighting wit", "Like a fine wine (not so easy to define)", "Loveliest guy on the planet", "Lovely ", "Lunatic"],
+"l": ["Lady of hair and wonder", "Loooooves all things chocolate", "Lush & lovely", "Luxuriant & lovely"],
 
-"m": ["Mad as a march hare ", "Mad as a wet hen ", "Made from gold", "Magical ", "Magnificent", "Magnifique", "Majestic ", "Makes the wold a smilier place", "Makes the world a better place", "Makes the world a sunnier place", "Maniacal (in an inspiring way)", "Marvelous", "Mauseatingly superb ", "Maximum output of awesomeness", "Meandering", "Mercurial", "Messy", "Mind-blowing to be around", "Mind-blowingly bright", "Momentous ", "Multi-talented", "Mysterious"],
+"m": ["Magnificent beyond comprehension", "Maybe a princess"],
 
-"n": ["Never overrated", "Nobel prize-winning potential", "Not indulgent", "Nuts", "Nutty"],
+"n": ["Not a shopaholic (nooooo)"],
 
-"o": ["Off the wall", "Offensively attractive", "Often deeply misunderstood", "Often very hungry", "One of a kind", "One of awesomeness", "One of grace", "Oozes charm", "Outrageous ", "Outstanding"],
+"o": ["Obviously never indulges", "Obviously a total heart-breaker", "One of much uniqueness and hair", "Outrageously amazing", "Outrageous beauty coupled with impeccable taste"],
 
-"p": ["Particularly fond of chocolate", "Perfect in every possible way", "Protector of the realm"],
+"p": ["Powerful woman in battle", "Pretty beyond belief", "Princess who lives in an enchanted kingdom", "Purveyor of happiness to all who surround her"],
 
-"q": ["Queer as chocolate orange", "Questionable restraint", "Quick-witted"],
+"q": ["Queen of shoes", "Queen of retail", "Queen of shopping", "Queen of all things good ", "Queen of love", "Queen of light", "Queen of chocolate", "Queen of snacks", "Queen of sleep", "Queenly"],
 
-"r": ["Righteous", "Ready for anything", "Really weird"],
+"r": ["Radiant beyond belief", "Refined chocoholic", "Ruler of the weird through the power of her evil laugh"],
 
-"s": ["Shockingly incredible", "Slayer of Dragons", "So amazing it's almost impossible to believe"],
+"s": ["Scientists trying to measure her awesomeness are likely to get burnt", "Shades of gorgeosity", "She of zen", "She who must be obeyed", "Simply gorgeous", "Smarter than Hermione Granger", "Sexier than any woman in the history of the planet", "So awesome that anyone who goes near her without protective clothing is likely to get burnt", "So infinitely awesome that she ends up generating and everlasting cycle of awesomeness", "Sparkling", "Stunningly bootylicious", "Supermodel genes", "Supernova", "Superwoman", "Supplier of happiness to all who surround her"],
 
-"t": ["Terrifyingly awesome", "Totally epic", "True revolutionary"],
+"t": ["The world doesn't quite know here awesomeness", "There is actually no word that truly defines her", "True dancing queen", "Try to meet her whatever it takes (you will never regret it)", "Textbook example of ravishing beauty", "Textbook example of a heroine"],
 
-"u": ["Unique beyond comprehension", "Uber cool", "Upbeat"],
+"u": ["Unbelievably stunning", "Unless we're mistaken, quite simply to most amazing woman to ever have lived"],
 
-"v": ["Voracious kisser", "Valuable beyond belief", "very very very sexy"],
+"v": ["Very powerful in battle", "Very very very very very very lovely"],
 
-"w": ["Wise, powerful and brave", "Wolf-like", "Whoever moors at his island is likely to be struck by the sheer radiance of his being"],
+"w": ["Wow she's hot", "Wow she is stunning", "Whoever moors at her island is sure to be struck by the extraordinariness of her being"],
 
-"x": ["X-rated", "XX-rated", "XXX-rated"],
+"x": ["Xceptionally lovely"],
 
-"y": ["Yes, he's amazing", "Youthful", "Yummy"],
+"y": ["Yes she is a mere human and not a deity if you can believe it"],
 
-"z": ["Zany", "Zombie-hunter", "Zippy"]
- }
+"z": ["Zany occasionally but more or less normal in most respects"]
+}
+
 
 	return female;
 }
