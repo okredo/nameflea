@@ -1,4 +1,92 @@
 body {
+    color: #222222;
+    font-family: palatino,"palatino linotype","book antiqua",serif;
+    font-size: 100%;
+    font-style: italic;
+    line-height: 1.35;
+    margin: 0;
+    text-align: center;
+}
+#inputs, #results {
+    border: 2px dashed #333333;
+    border-radius: 3px 3px 3px 3px;
+    margin: 50px auto;
+    padding: 15px 20px 10px;
+    text-align: left;
+    width: 350px;
+}
+h1 {
+    font-size: 150%;
+    margin: 0 0 10px;
+}
+h2 {
+    font-size: 150%;
+    margin: 0;
+    text-transform: uppercase;
+}
+p {
+    margin: 0 0 15px;
+}
+a {
+    color: #222222;
+    text-decoration: underline;
+}
+input, button, label {
+    font-family: inherit;
+}
+.name label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.name input {
+    background: url("../images/inputbg.png") repeat-x scroll 0 0 transparent;
+    border: 1px solid #CCCCCC;
+    border-radius: 3px 3px 3px 3px;
+    font-size: 100%;
+    padding: 5px;
+    width: 90%;
+}
+.name input:focus {
+    border: 1px solid #333333;
+    outline: 0 none;
+}
+.gender {
+    margin: 0 0 10px;
+    overflow: hidden;
+}
+.gender p {
+    color: #999999;
+    margin: 5px 0;
+}
+.submit button {
+    background-color: #333333;
+    border: 0 none;
+    border-radius: 3px 3px 3px 3px;
+    color: #FFFFFF;
+    font-size: 85%;
+    padding: 5px 15px;
+}
+.submit button:hover {
+    background-color: #000000;
+    cursor: pointer;
+}
+.buy a {
+    background-color: #333333;
+    border-radius: 3px 3px 3px 3px;
+    color: #FFFFFF;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+.buy a:hover {
+    background-color: #000000;
+}
+.buy a span {
+    text-transform: uppercase;
+}
+
+/*
+body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
@@ -6,3 +94,4 @@ body {
 a {
   color: #00B7FF;
 }
+*/

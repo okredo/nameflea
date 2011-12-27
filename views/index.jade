@@ -1,20 +1,24 @@
-h1= title
-p Welcome to #{title}
+//h1= title
+//p Welcome to #{title}
 
-form()
-    legend Type in your name below
-      p
-        input(type="text", id="user")
-          .tip.
-            Enter a name.
-      p
-        input(type="radio", id="gender", name="gender", value="male") 
-        |Male
-      p
-        input(type="radio", id="gender", name="gender",  value="female") 
-        |Female
-      p.buttons
-        input(type="button", value="Submit", onClick="doQuery()")
+
+div(id="inputs")
+  h1 What does your name mean?
+  form()
+        p.name
+          label(for="user") Type your name in below
+          input(type="text", id="user")
+        div(class="gender")
+          p
+            input(type="radio", id="gender", name="gender", value="male") 
+            //|Male
+            label Male
+          p
+            input(type="radio", id="gender", name="gender",  value="female") 
+            //|Female
+            label Female
+        p.submit
+          input(type="button", value="Submit", onClick="doQuery()")
 
 <!-- Fill in $results -->
 div(id="results")
