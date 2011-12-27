@@ -136,8 +136,11 @@ app.post('/fun', function(req, res){
   }
   else {
     console.log("OOOPS.... " + JSON.stringify(req.body.user));
-    res.contentType('json');
-    res.send(JSON.stringify({error:"Name Not Provided"}));
+    //res.contentType('json');
+    //res.send(JSON.stringify({error:"Name Not Provided"}));
+    res.contentType('html');
+    res.send("<label>OOOPS . . .</label>");
+    console.log("*********************************");
     console.log("*********************************");
   }
  
