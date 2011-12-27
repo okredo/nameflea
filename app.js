@@ -110,8 +110,17 @@ app.post('/fun', function(req, res){
     answer.name=req.body.user.toUpperCase();
     answer.sentence = result.join(", ");
 
-    res.contentType('json');
-    res.send(JSON.stringify(answer));
+    //res.contentType('json');
+    //res.send(JSON.stringify(answer));
+
+    var output = "<b>" + answer.name + "</b>" + "<p>";
+    output = output + "def: " + answer.sentence + ".<p>";
+    output = output + "<p class=\"buy\"><a href=\"#\">buy <span>" + answer.name + "</span> mugs &amp; shirts</a></p>";
+    
+    //res.contentType('json');
+    //res.send(JSON.stringify(answer));
+    res.contentType('html');
+    res.send(output);
     console.log("*********************************");
     
     /*
