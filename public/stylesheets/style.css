@@ -7,6 +7,12 @@ body {
     margin: 0;
     text-align: center;
 }
+#results.hideDots {
+   display:none; 
+}
+#results.showDots {
+   display:block;
+}
 #inputs, #results {
     border: 2px dashed #333333;
     border-radius: 3px 3px 3px 3px;

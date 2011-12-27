@@ -17,6 +17,8 @@ html
           },
           success: function(data){
             console.log(data);
+            jQuery('#results').removeClass("hideDots");
+            jQuery('#results').addClass("showDots");
             jQuery('#results').html(data);
           }
          });
