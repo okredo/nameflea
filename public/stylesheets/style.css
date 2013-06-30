@@ -45,14 +45,6 @@ input, button, label {
     font-weight: bold;
     margin-bottom: 5px;
 }
-.name input {
-    background: url("../images/inputbg.png") repeat-x scroll 0 0 transparent;
-    border: 1px solid #CCCCCC;
-    border-radius: 3px 3px 3px 3px;
-    font-size: 100%;
-    padding: 5px;
-    width: 90%;
-}
 .name input:focus {
     border: 1px solid #333333;
     outline: 0 none;
@@ -91,13 +83,3 @@ input, button, label {
     text-transform: uppercase;
 }
 
-/*
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
-
-a {
-  color: #00B7FF;
-}
-*/
