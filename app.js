@@ -65,8 +65,8 @@ app.get('/500', function(req, res){
 //
 // Persistence
 //
-var mongolian = require("mongolian");
-var db = new mongolian("mongodb://app:app@flame.mongohq.com:27043/ai_test");
+//var mongolian = require("mongolian");
+//var db = new mongolian("mongodb://app:app@flame.mongohq.com:27043/ai_test");
 
 //
 // Routes
@@ -93,10 +93,12 @@ app.post('/fun', function(req, res){
 
   if (user != null && user != "" && req.body.user != "undefined") {
     console.log("Inserting . . . ");
+/*
     db.collection("users").insert({
       name:  user,
       gender: gen 
     });
+*/
     console.log("Inserted!");
 
     var result = "";
